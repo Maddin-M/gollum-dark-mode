@@ -56,17 +56,15 @@ table th { color: var(--primary-text) !important }
 .color-bg-success { background: var(--green) !important }
 #search-query:focus { box-shadow: none }
 #search-query::placeholder { color: var(--secondary-text) }
+.Counter--primary { background: var(--secondary); color: var(--primary-text) }
 
 /* buttons */
 .btn:not(.btn-primary) { background: var(--secondary); color: var(--primary-text); box-shadow: none; border-color: var(--tertiary) }
 .btn:not(.btn-primary):hover { background: var(--tertiary) }
 .btn-primary { background: var(--green) }
 .btn-link { color: var(--cyan) }
-.next_page:not(.disabled) { color: var(--cyan) }
-.previous_page:not(.disabled) { color: var(--cyan) }
-
-/* set hovering svg icons to primary-text */
-a::before { filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(201%) hue-rotate(183deg) brightness(98%) contrast(96%) }
+.next_page, .previous_page { color: var(--cyan) !important }
+.next_page.disabled, .previous_page.disabled { color: var(--secondary-text) !important }
 
 /* wiki content */
 div.toc-title { color: var(--primary-text) !important; border-bottom: 1px solid var(--tertiary) !important }
@@ -75,10 +73,10 @@ div.toc-title { color: var(--primary-text) !important; border-bottom: 1px solid 
 #wiki-sidebar { margin-top: 31px } /* to align it with table of content */
 :is(h1, h2, h3, h4, h5, h6).editable { border-bottom: 1px solid var(--tertiary) !important }
 blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--secondary-text) !important }
+.markdown-body a::before { filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(201%) hue-rotate(183deg) brightness(98%) contrast(96%) }
 
 /* edit */
 #gollum-autorecover-msg { background: var(--green); color: var(--primary-text); border-color: var(--tertiary) }
-
 .SelectMenu-modal { background: var(--tertiary) }
 .SelectMenu-header { border-color: var(--secondary) }
 .SelectMenu-item { background: var(--tertiary); color: var(--primary-text); border-color: var(--secondary) }
@@ -87,7 +85,6 @@ blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--s
 .SelectMenu-item[aria-checked="true"] { color: var(--primary-text) }
 .SelectMenu-modal { border-color: var(--secondary) }
 .SelectMenu-divider { background: var(--secondary); color: var(--secondary-text); border-color: var(--secondary) }
-
 #gollum-editor-help.border { border-color: var(--tertiary) !important }
 #gollum-editor-help nav { border-color: var(--secondary) !important }
 #gollum-editor-help-parent, #gollum-editor-help-list { background: var(--tertiary) }
