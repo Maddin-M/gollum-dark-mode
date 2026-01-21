@@ -4,15 +4,19 @@
   --tertiary: #3a3b3c;
   --primary-text: #e4e6eb;
   --secondary-text: #b0b3b8;
-  --cyan: #4fa4b8;
-  --red: #e64539;
-  --yellow: #f0b541;
-  --green: #3b7d4f;
-  --purple: #404973;
-  --pink: #9c2a70;
+
   --blue: #4c6885;
-  --red-transparent: rgba(230, 69, 57, .2);
-  --green-transparent: rgba(59, 125, 79, .2);
+  --blue-transparent: rgba(76, 104, 133, .1);
+  --cyan: #4fa4b8;
+  --green: #3b7d4f;
+  --green-transparent: rgba(59, 125, 79, .1);
+  --pink: #9c2a70;
+  --purple: #634ca4;
+  --purple-transparent: rgba(99, 76, 164, .1);
+  --red: #e64539;
+  --red-transparent: rgba(230, 69, 57, .1);
+  --yellow: #f0b541;
+  --yellow-transparent: rgba(240, 181, 65, .1)
 }
 
 /* general */
@@ -92,6 +96,19 @@ blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--s
 #gollum-editor-help-parent a:hover, #gollum-editor-help-list a:hover {background: var(--secondary) !important }
 #gollum-editor-help-parent a.selected, #gollum-editor-help-list a.selected { background: var(--secondary) !important; color: var(--primary-text) !important }
 #gollum-editor-help-wrapper { background: var(--tertiary) }
+
+/* github-style alerts */
+.github-alert { border-radius: 0 6px 6px 0; padding-top: 5px !important; padding-bottom: 10px !important }
+.github-alert-note { border-left: .25em solid var(--blue) !important; background: var(--blue-transparent) }
+.github-alert-note .github-alert-title { color: var(--blue) }
+.github-alert-tip { border-left: .25em solid var(--green) !important; background: var(--green-transparent) }
+.github-alert-tip .github-alert-title { color: var(--green) }
+.github-alert-important { border-left: .25em solid var(--purple) !important; background: var(--purple-transparent) }
+.github-alert-important .github-alert-title { color: var(--purple) }
+.github-alert-warning { border-left: .25em solid var(--yellow) !important; background: var(--yellow-transparent) }
+.github-alert-warning .github-alert-title { color: var(--yellow) }
+.github-alert-caution { border-left: .25em solid var(--red) !important; background: var(--red-transparent) }
+.github-alert-caution .github-alert-title { color: var(--red) }
 
 /* code blocks */
 .markdown-body pre { min-height: 2rem }
