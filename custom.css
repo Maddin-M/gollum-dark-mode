@@ -75,6 +75,7 @@ table th { color: var(--primary-text) !important }
 div.toc-title { color: var(--primary-text) !important; border-bottom: 1px solid var(--tertiary) !important }
 .toc { background: var(--secondary) !important; border: 1px solid var(--tertiary) !important }
 #sidebar-content .toc { border: none !important }
+#sidebar-content { padding: 0px !important }
 #wiki-sidebar { margin-top: 31px; border-radius: 3px }
 :is(h1, h2, h3, h4, h5, h6).editable { border-bottom: 1px solid var(--tertiary) !important }
 blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--secondary-text) !important }
