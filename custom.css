@@ -20,9 +20,10 @@
 }
 
 /* general */
-body { background: var(--primary); color: var(--primary-text); }
-.border { border-color: var(--secondary) !important; }
-.border-bottom { border-color: var(--secondary) !important; }
+:root, [data-color-mode=light][data-light-theme*=light], [data-color-mode=dark][data-dark-theme*=light] { color-scheme: dark }
+body { background: var(--primary); color: var(--primary-text) }
+.border { border-color: var(--secondary) !important }
+.border-bottom { border-color: var(--secondary) !important }
 a { color: var(--cyan) }
 
 /* Box classes */
@@ -40,7 +41,7 @@ a { color: var(--cyan) }
 
 /* dialog */
 #gollum-dialog-dialog-inner { background: var(--secondary) }
-#gollum-dialog-dialog-title .border-bottom { border-color: var(--secondary-text) !important }
+#gollum-dialog-dialog-title .border-bottom { border-color: var(--tertiary) !important }
 #gollum-dialog-dialog-body input:focus { box-shadow: none }
 label { color: var(--primary-text) !important }
 .field .context { color: var(--secondary-text) !important }
@@ -74,7 +75,7 @@ table th { color: var(--primary-text) !important }
 div.toc-title { color: var(--primary-text) !important; border-bottom: 1px solid var(--tertiary) !important }
 .toc { background: var(--secondary) !important; border: 1px solid var(--tertiary) !important }
 #sidebar-content .toc { border: none !important }
-#wiki-sidebar { margin-top: 31px } /* to align it with table of content */
+#wiki-sidebar { margin-top: 31px; border-radius: 3px }
 :is(h1, h2, h3, h4, h5, h6).editable { border-bottom: 1px solid var(--tertiary) !important }
 blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--secondary-text) !important }
 .markdown-body a::before { filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(201%) hue-rotate(183deg) brightness(98%) contrast(96%) }
@@ -98,7 +99,7 @@ blockquote { border-left: .25em solid var(--tertiary) !important; color: var(--s
 #gollum-editor-help-wrapper { background: var(--tertiary) }
 
 /* github-style alerts */
-.github-alert { border-radius: 0 6px 6px 0; padding-top: 5px !important; padding-bottom: 10px !important }
+.github-alert { border-radius: 0 3px 3px 0; padding-top: 5px !important; padding-bottom: 10px !important }
 .github-alert-note { border-left: .25em solid var(--blue) !important; background: var(--blue-transparent) }
 .github-alert-note .github-alert-title { color: var(--blue) }
 .github-alert-tip { border-left: .25em solid var(--green) !important; background: var(--green-transparent) }
