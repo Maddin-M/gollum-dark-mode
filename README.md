@@ -6,6 +6,14 @@ Since I couldn't find a good dark mode skin for [Gollum][1], the git-based wiki 
 
 Copy the `custom.css` and `custom.js` into your wiki repository. Either in the root or to whatever directory you set your `page_file_dir` in Gollum's config. Don't forget to turn on custom CSS and JS loading, as shown in the [docs][2].
 
+## Quick test
+
+Clone this repository, and run this inside it:
+```shell
+docker run --rm -p 4567:4567 -v $(pwd):/wiki gollumwiki/gollum:master --css --js
+```
+Go to `localhost:4567` and test it out!
+
 ## Contributing
 
 Since I created this based on what I see in my personal wiki, parts might be missing. Feel free to create an issue or pull request.
